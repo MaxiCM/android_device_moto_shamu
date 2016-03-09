@@ -163,6 +163,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.isUsbOtgEnabled=1
 
+#OTA Updates
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ota.manifest=http://maxicm.com/shamu/ota.xml
+
+#MaxiCM Tweaks
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.performance.tuning=1 \
+    ro.HOME_APP_ADJ=1 \
+    debug.sf.hw=1 \
+    video.accelerate.hw=1
+
+# Snap Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Audio effects
 PRODUCT_PACKAGES += \
     libqcomvisualizer \
